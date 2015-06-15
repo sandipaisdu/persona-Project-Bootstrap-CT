@@ -2,3 +2,36 @@
 margin:0;
 padding:0;
 }
+
+/***************************************************************
+                             Menues
+****************************************************************/
+.nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.nav ul li{
+	display: inline;
+}
+.nav ul li a:after{
+	content:"";
+	width:40px;
+	height: 2px;
+	background-color: red;
+	top: 40px;
+}
+.nav ul li a{
+	padding: 10px;
+	text-decoration: none;
+	color: #000;
+}
+.nav ul li a:hover{
+	color:red;
+}
+
+
+
+/***************************************************************
+                             Menues
+****************************************************************/
