@@ -1,37 +1,279 @@
-*{
-margin:0;
-padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
+@font-face {
+    font-family: 'ubuntubold';
+    src: url('fonts/ubuntu-bold-webfont.eot');
+    src: url('fonts/ubuntu-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ubuntu-bold-webfont.woff2') format('woff2'),
+         url('fonts/ubuntu-bold-webfont.woff') format('woff'),
+         url('fonts/ubuntu-bold-webfont.ttf') format('truetype'),
+         url('fonts/ubuntu-bold-webfont.svg#ubuntubold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('fonts/raleway-regular-webfont.eot');
+    src: url('fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('fonts/raleway-regular-webfont.woff') format('woff'),
+         url('fonts/raleway-regular-webfont.ttf') format('truetype'),
+         url('fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+    font-family: 'ralewayregular';
+}
+h2{
+    font-family: 'ubuntubold';
+}
 /***************************************************************
                              Menues
 ****************************************************************/
-.nav ul{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-.nav ul li{
-	display: inline;
-}
-.nav ul li a:after{
-	content:"";
-	width:40px;
-	height: 2px;
-	background-color: red;
-	top: 40px;
-}
-.nav ul li a{
-	padding: 10px;
+a{
 	text-decoration: none;
-	color: #000;
 }
-.nav ul li a:hover{
-	color:red;
+header {
+    min-height: 60px;
+    line-height: 60px;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.46);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.46);
+    box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.46);
 }
 
+.nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
+.nav ul li {
+    display: inline;
+}
 
+.nav ul li a:after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: red;
+    top: 40px;
+}
+
+.nav ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav ul li a:hover {
+    color: red;
+}
+
+.search {
+    color: red;
+}
 /***************************************************************
                              Menues
 ****************************************************************/
+/*.container-fluid {
+    margin-top: 20px;
+}
+
+/* Carousel Styles */
+
+.carousel-indicators .active {
+    background-color: #2980b9;
+}
+
+.carousel-inner img {
+    width: 100%;
+    max-height: 460px
+}
+
+.carousel-control {
+    width: 0;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    background-image: none;
+    background-repeat: no-repeat;
+    text-shadow: none;
+}
+/*
+.carousel-control.left span {
+	padding: 15px;
+}
+
+.carousel-control.right span {
+	padding: 15px;
+}
+*/
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+    position: absolute;
+    top: 45%;
+    z-index: 5;
+    display: inline-block;
+}
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .icon-prev {
+    left: 0;
+}
+
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-next {
+    right: 0;
+}
+
+.carousel-control.left span,
+.carousel-control.right span {
+    background-color: #000;
+}
+
+.carousel-control.left span:hover,
+.carousel-control.right span:hover {
+    opacity: .7;
+    filter: alpha(opacity=70);
+}
+/* Carousel Header Styles */
+
+.header-text {
+    position: absolute;
+    top: 20%;
+    left: 1.8%;
+    right: auto;
+    width: 96.66666666666666%;
+    color: #fff;
+}
+
+.header-text h2 {
+    font-size: 40px;
+}
+
+.header-text h2 span {
+    background-color: #2980b9;
+    padding: 10px;
+}
+
+.header-text h3 span {
+    background-color: #000;
+    padding: 15px;
+}
+
+.btn-min-block {
+    min-width: 170px;
+    line-height: 26px;
+}
+
+.btn-theme {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin-right: 15px;
+}
+
+.btn-theme:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+  margin-left: 0px;
+}
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+  margin-right: 0px;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+ /* background-color: #000 \9;*/
+  background-color: #00ccff;
+  border: 1px solid #fff;
+  border-radius: 0px;
+}
+.carousel-indicators .active {
+  background-color: red;
+}
+
+
+
+
+/*
+SERVICES
+AREA
+STYLES
+ */
+.services_area{
+    background-color: #eeeeee;
+      margin-bottom: 15px;
+      -webkit-box-shadow: 0px 5px 5px 0px rgba(104, 104, 104, 0.75);
+-moz-box-shadow:    0px 5px 5px 0px rgba(104, 104, 104, 0.75);
+box-shadow:         0px 5px 5px 0px rgba(104, 104, 104, 0.75);
+}
+.service_main_heading {
+    color:#282828;
+    margin-bottom: 80px;
+}
+.services h2{
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+.services {
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  padding: 10px;
+  margin-bottom: 25px;
+
+
+}
+.services img{
+
+margin-left: 35%;
+  margin-top: -15%;
+}
+
+
+
+
+
+
+
+
+.work_description_area{
+    background-color: #00ccff;
+      min-height: 420px;
+      -webkit-box-shadow: 0px 5px 5px 0px rgba(104, 104, 104, 0.75);
+-moz-box-shadow:    0px 5px 5px 0px rgba(104, 104, 104, 0.75);
+box-shadow:         0px 5px 5px 0px rgba(104, 104, 104, 0.75);
+}
+.work_description_area h2{
+    margin-bottom: 30px;
+}
+.list ul{
+    margin: 0;
+    padding: 0;
+    list-style-image: url('img/list_style_image.png');
+}
+.list ul li {
+  font-family: 'ubuntubold';
+  line-height: 55px;
+  color: #fff;
+  font-size: 20px;
+}
