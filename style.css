@@ -212,7 +212,7 @@ header {
   background-color: red;
 }
 
-
+/*carousel Area*/
 
 
 /*
@@ -222,10 +222,7 @@ STYLES
  */
 .services_area{
     background-color: #eeeeee;
-      margin-bottom: 15px;
-      -webkit-box-shadow: 0px 5px 5px 0px rgba(104, 104, 104, 0.75);
--moz-box-shadow:    0px 5px 5px 0px rgba(104, 104, 104, 0.75);
-box-shadow:         0px 5px 5px 0px rgba(104, 104, 104, 0.75);
+
 }
 .service_main_heading {
     color:#282828;
@@ -234,6 +231,18 @@ box-shadow:         0px 5px 5px 0px rgba(104, 104, 104, 0.75);
 .services h2{
     font-size: 20px;
     margin-bottom: 0px;
+}
+
+
+.service_main_heading:after {
+  content: '';
+  display: block;
+  background: #ff0030;
+  height: 4px;
+  max-width: 35px;
+  width: 100%;
+  margin: 0 auto;
+  border:1px solid #f58fa2;
 }
 .services {
   background-color: #fff;
@@ -248,14 +257,18 @@ box-shadow:         0px 5px 5px 0px rgba(104, 104, 104, 0.75);
 margin-left: 35%;
   margin-top: -15%;
 }
+/*
+SERVICES
+AREA
+STYLES
+ */
 
 
 
 
 
 
-
-
+/*How It Works Area*/
 .work_description_area{
     background-color: #00ccff;
       min-height: 420px;
@@ -265,6 +278,16 @@ box-shadow:         0px 5px 5px 0px rgba(104, 104, 104, 0.75);
 }
 .work_description_area h2{
     margin-bottom: 30px;
+}
+.work_description_area h2:after {
+  content: '';
+  display: block;
+  background: #e1fd00;
+  height: 4px;
+  max-width: 35px;
+  width: 100%;
+  margin: 0 auto;
+  border:1px solid #e9f48f;
 }
 .list ul{
     margin: 0;
@@ -277,3 +300,41 @@ box-shadow:         0px 5px 5px 0px rgba(104, 104, 104, 0.75);
   color: #fff;
   font-size: 20px;
 }
+
+
+/*How It Works Area*/
+
+
+
+
+
+
+
+
+
+
+
+/*Expertise Area*/
+.expertise-area{
+    background-color: #eeeeee;
+}
+.expertise-area h2{}
+.expertise-area h2:after{
+    content: '';
+  display: block;
+  background: #00ccff;
+  height: 4px;
+  max-width: 35px;
+  width: 100%;
+  margin: 0 auto;
+  border:1px solid #8fe0f5;
+}
+
+
+
+
+
+
+
+
+/*Expertise Area*/
